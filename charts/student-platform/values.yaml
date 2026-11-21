@@ -1,0 +1,15 @@
+imageTag: "sha-4368a0d5f7701be833b04fdf62abcf7942c8c92f"
+
+frontend:
+  repository: codeykenny/student-platform-frontend
+
+backend:
+  repository: codeykenny/student-platform-backend
+  replicas: 1
+
+database:
+  image: mysql:8.4
+  name: students
+  user: student_app
+  storage: 1Gi
+  existingSecret: student-db-credentials
