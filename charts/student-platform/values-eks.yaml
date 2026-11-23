@@ -1,3 +1,9 @@
+autoscaling:
+  enabled: true
+  minReplicas: 2
+  maxReplicas: 4
+  targetCPUUtilizationPercentage: 60
+
 backend:
   tag: "sha-c6ffbd980e9606f5a0590481145cbf502807c7b5"
   resources:
