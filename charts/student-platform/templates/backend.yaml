@@ -12,7 +12,9 @@ kind: Deployment
 metadata:
   name: backend
 spec:
+  {{- if not .Values.autoscaling.enabled }}
   replicas: {{ .Values.backend.replicas }}
+  {{- end }}
   selector:
     matchLabels:
       app: backend
@@ -24,6 +26,10 @@ spec:
       containers:
         - name: backend
           image: "{{ .Values.backend.repository }}:{{ default .Values.imageTag .Values.backend.tag }}"
+                    {{- with .Values.backend.resources }}
+          resources:
+            {{- toYaml . | nindent 12 }}
+          {{- end }}
           ports:
             - name: http
               containerPort: 5000

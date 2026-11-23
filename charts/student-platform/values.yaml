@@ -1,3 +1,6 @@
+autoscaling:
+  enabled: false
+
 imageTag: "sha-4368a0d5f7701be833b04fdf62abcf7942c8c92f"
 
 frontend:
@@ -6,6 +9,7 @@ frontend:
 backend:
   repository: codeykenny/student-platform-backend
   replicas: 1
+  resources: {}
 
 database:
   image: mysql:8.4
