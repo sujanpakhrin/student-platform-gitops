@@ -11,6 +11,9 @@ kind: PersistentVolumeClaim
 metadata:
   name: database-data
 spec:
+  {{- with .Values.ebsStorageClassName }}
+  storageClassName: {{ . | quote }}
+  {{- end }}
   accessModes:
     - ReadWriteOnce
   resources:
