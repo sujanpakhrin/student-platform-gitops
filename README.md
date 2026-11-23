@@ -24,3 +24,17 @@ Argo CD deployed the student platform from the `main` branch of this repository.
 | Git-driven release | Argo CD synced GitOps commit `9fbfe33`. The ready backend pod ran the image tagged `sha-c6ffbd980e9606f5a0590481145cbf502807c7b5`, and `GET /version` returned `{"version":"v2"}`. | [Backend v2 rollout](docs/screenshots/18-gitops-image-rollout.png) |
 
 The [Argo CD Application](argocd/student-platform.yaml) defines the repository, chart path, and sync policy. The [EKS values](charts/student-platform/values-eks.yaml) identify the storage class and backend release.
+
+## Day 6 — Monitoring and backend autoscaling
+
+The backend HPA was configured for 2–4 replicas with a 60% CPU target and a
+50m CPU request per pod. Before load, the HPA reported 5% utilization with
+two ready replicas. During a three-minute test against `/version`, the backend
+scaled to three available replicas. After the test completed, CPU fell to 4%
+while three replicas were still ready. The backend later returned to two.
+
+- [Grafana dashboard](docs/screenshots/19-monitoring-dashboard.png)
+- [Before load](docs/screenshots/20-hpa-before.png)
+- [Scale-up](docs/screenshots/21-hpa-scale-up.png)
+- [Scale-down](docs/screenshots/22-hpa-scale-down.png)
+- [Dashboard configuration](monitoring/student-platform-dashboard.json)
