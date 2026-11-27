@@ -38,3 +38,13 @@ while three replicas were still ready. The backend later returned to two.
 - [Scale-up](docs/screenshots/21-hpa-scale-up.png)
 - [Scale-down](docs/screenshots/22-hpa-scale-down.png)
 - [Dashboard configuration](monitoring/student-platform-dashboard.json)
+
+## Day 7 — Scheduling and failure recovery
+
+| Exercise                                                                | Observed outcome                                                                                                                                                       |
+| ----------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Taints and tolerations](docs/screenshots/23-taint-toleration.png)      | Two pods targeted the same worker. The pod without the toleration stayed Pending, and the tolerated pod ran.                                                           |
+| [Required node affinity](docs/screenshots/24-node-affinity.png)         | The scheduler placed the pod on the worker labelled `workload=student-api`.                                                                                            |
+| [DaemonSet](docs/screenshots/25-daemonset.png)                          | Two pods were ready, one on each Minikube node.                                                                                                                        |
+| [Backend pod recovery](docs/screenshots/26-backend-pod-recovery.png)    | After one Flask pod was deleted, its ReplicaSet created a replacement. The backend returned to 2/2 Ready and the same student ID was retrievable through the frontend. |
+| [Argo CD drift recovery](docs/screenshots/27-argocd-drift-recovery.png) | I changed the live frontend replica count from 1 to 2. Argo CD restored 1 replica and reported Synced and Healthy at the same Git revision, `4559a195`.                |
