@@ -12,3 +12,6 @@ backend:
     requests:
       cpu: 50m
       memory: 96Mi
+
+database:
+  existingClaim: database-data-recovery-demo
