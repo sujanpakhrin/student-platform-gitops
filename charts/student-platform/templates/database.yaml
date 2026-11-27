@@ -77,7 +77,7 @@ spec:
       volumes:
         - name: data
           persistentVolumeClaim:
-            claimName: database-data
+            claimName: {{ .Values.database.existingClaim | default "database-data" | quote }}
         - name: init
           configMap:
             name: database-init
