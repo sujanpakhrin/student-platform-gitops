@@ -11,6 +11,9 @@ kind: PersistentVolumeClaim
 metadata:
   name: database-data
 spec:
+  {{- with .Values.database.restoredVolumeName }}
+  volumeName: {{ . | quote }}
+  {{- end }}
   {{- with .Values.ebsStorageClassName }}
   storageClassName: {{ . | quote }}
   {{- end }}
