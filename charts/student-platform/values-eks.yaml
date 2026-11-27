@@ -15,3 +15,6 @@ backend:
 
 database:
   existingClaim: database-data-recovery-demo
+  database:
+  existingClaim: database-data-recovery-demo
+  restoredVolumeName: student-mysql-restored
