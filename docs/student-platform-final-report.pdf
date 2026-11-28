@@ -1,0 +1,551 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [9 0 R 11 0 R 14 0 R 19 0 R 23 0 R 28 0 R 32 0 R 46 0 R] /Count 8 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+5 0 obj
+<< /Length 3380 >>
+stream
+1.0000 1.0000 1.0000 rg 0 0 595 842 re f
+0.0000 0.4314 0.4471 rg 40 800 33 4 re f
+BT /F2 10 Tf 0.0000 0.4314 0.4471 rg 1 0 0 1 40 777 Tm (PRACTICAL CAPSTONE / FINAL PROJECT REPORT) Tj ET
+BT /F2 25 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 737 Tm (Enterprise Student Management Platform) Tj ET
+BT /F1 12 Tf 0.2824 0.3765 0.4588 rg 1 0 0 1 40 701 Tm (Sujan Pakhrin  |  Skill Shikshya DevOps  |  28 November 2026) Tj ET
+BT /F2 14 Tf 0.0000 0.4314 0.4471 rg 1 0 0 1 40 655 Tm (Objective and scope) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 631 Tm (Build a repeatable way to run a three-tier student records application on AWS. A user) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 615 Tm (can add, list, retrieve and delete students. The project covers the path from a source) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 599 Tm (change to a running release and the response to failures after deployment.) Tj ET
+BT /F2 14 Tf 0.0000 0.4314 0.4471 rg 1 0 0 1 40 572 Tm (Implementation) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 548 Tm (Nginx serves the frontend, Flask handles requests, and MySQL 8.4 stores student records.) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 532 Tm (Docker Compose supports local development. GitHub Actions builds and publishes the) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 516 Tm (application images. Terraform provisions AWS networking and EKS, while Argo CD deploys a) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 500 Tm (Helm chart from a separate GitOps repository.) Tj ET
+BT /F2 14 Tf 0.0000 0.4314 0.4471 rg 1 0 0 1 40 473 Tm (Demonstrated outcomes) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 449 Tm (The application retained a student after Compose container recreation. On Minikube, a) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 433 Tm (Helm upgrade and rollback changed the backend from one replica to two and back to one.) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 417 Tm (On EKS, a Git change deployed backend v2, and controlled load drove an observed scale-up) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 401 Tm (from two ready pods to three.) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 374 Tm (Two recovery tests exercised different controllers. A ReplicaSet replaced a deleted) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 358 Tm (Flask pod. Argo CD corrected a live frontend replica change while the Git revision) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 342 Tm (stayed fixed. Historical records on the retained MySQL disk could not be verified after) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 326 Tm (the infrastructure rebuild.) Tj ET
+BT /F2 14 Tf 0.0000 0.4314 0.4471 rg 1 0 0 1 40 299 Tm (Submission references) Tj ET
+BT /F2 10 Tf 0.0000 0.4314 0.4471 rg 1 0 0 1 40 275 Tm (Application source, Compose configuration and CI evidence) Tj ET
+BT /F2 10 Tf 0.0000 0.4314 0.4471 rg 1 0 0 1 40 256 Tm (Terraform infrastructure and AWS verification) Tj ET
+BT /F2 10 Tf 0.0000 0.4314 0.4471 rg 1 0 0 1 40 237 Tm (Helm chart, GitOps deployment and operational evidence) Tj ET
+0.7412 0.8392 0.8471 RG 1 w 40 43 m 555 43 l S
+BT /F1 9 Tf 0.2824 0.3765 0.4588 rg 1 0 0 1 40 24 Tm (SUJAN PAKHRIN  /  DEVOPS ENGINEERING) Tj ET
+BT /F1 9 Tf 0.2824 0.3765 0.4588 rg 1 0 0 1 508 24 Tm (PAGE 1) Tj ET
+endstream
+endobj
+6 0 obj
+<< /Type /Annot /Subtype /Link /Rect [40 273 382 286] /Border [0 0 0] /A << /S /URI /URI (https://github.com/sujanpakhrin/student-platform-app) >> >>
+endobj
+7 0 obj
+<< /Type /Annot /Subtype /Link /Rect [40 254 310 267] /Border [0 0 0] /A << /S /URI /URI (https://github.com/sujanpakhrin/student-platform-infra) >> >>
+endobj
+8 0 obj
+<< /Type /Annot /Subtype /Link /Rect [40 235 364 248] /Border [0 0 0] /A << /S /URI /URI (https://github.com/sujanpakhrin/student-platform-gitops) >> >>
+endobj
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 5 0 R /Annots [6 0 R 7 0 R 8 0 R] >>
+endobj
+10 0 obj
+<< /Length 6231 >>
+stream
+1.0000 1.0000 1.0000 rg 0 0 595 842 re f
+0.0000 0.4314 0.4471 rg 40 800 33 4 re f
+BT /F2 10 Tf 0.0000 0.4314 0.4471 rg 1 0 0 1 40 777 Tm (FIGURE 1 / ARCHITECTURE DESIGN) Tj ET
+BT /F2 25 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 737 Tm (Application architecture) Tj ET
+BT /F2 14 Tf 0.0000 0.4314 0.4471 rg 1 0 0 1 40 701 Tm (Build and release) Tj ET
+0.9176 0.9608 0.9529 rg 40 633 135 45 re f
+0.0000 0.4314 0.4471 rg 40 633 3 45 re f
+BT /F2 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 50 660 Tm (Application repo) Tj ET
+BT /F1 9 Tf 0.2824 0.3765 0.4588 rg 1 0 0 1 50 644 Tm (Frontend and Flask API) Tj ET
+0.9176 0.9608 0.9529 rg 222 633 145 45 re f
+0.0000 0.4314 0.4471 rg 222 633 3 45 re f
+BT /F2 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 232 660 Tm (GitHub Actions) Tj ET
+BT /F1 9 Tf 0.2824 0.3765 0.4588 rg 1 0 0 1 232 644 Tm (Validate, build and test) Tj ET
+0.9176 0.9608 0.9529 rg 412 633 143 45 re f
+0.0000 0.4314 0.4471 rg 412 633 3 45 re f
+BT /F2 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 422 660 Tm (Docker Hub) Tj ET
+BT /F1 9 Tf 0.2824 0.3765 0.4588 rg 1 0 0 1 422 644 Tm (SHA-tagged images) Tj ET
+0.0000 0.4314 0.4471 RG 1 w 175 656 m 222 656 l S
+0.0000 0.4314 0.4471 RG 1 w 222 656 m 215.8569220667674 652.6440212297706 l S
+0.0000 0.4314 0.4471 RG 1 w 222 656 m 215.8569220667674 659.3559787702294 l S
+0.0000 0.4314 0.4471 RG 1 w 367 656 m 412 656 l S
+0.0000 0.4314 0.4471 RG 1 w 412 656 m 405.85692206676737 652.6440212297706 l S
+0.0000 0.4314 0.4471 RG 1 w 412 656 m 405.85692206676737 659.3559787702294 l S
+0.9176 0.9608 0.9529 rg 40 565 135 45 re f
+0.0000 0.4314 0.4471 rg 40 565 3 45 re f
+BT /F2 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 50 592 Tm (GitOps repo) Tj ET
+BT /F1 9 Tf 0.2824 0.3765 0.4588 rg 1 0 0 1 50 576 Tm (Helm chart + EKS values) Tj ET
+0.9176 0.9608 0.9529 rg 222 565 145 45 re f
+0.0000 0.4314 0.4471 rg 222 565 3 45 re f
+BT /F2 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 232 592 Tm (Argo CD) Tj ET
+BT /F1 9 Tf 0.2824 0.3765 0.4588 rg 1 0 0 1 232 576 Tm (Render and reconcile) Tj ET
+0.9176 0.9608 0.9529 rg 412 565 143 45 re f
+0.0000 0.4314 0.4471 rg 412 565 3 45 re f
+BT /F2 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 422 592 Tm (EKS workloads) Tj ET
+BT /F1 9 Tf 0.2824 0.3765 0.4588 rg 1 0 0 1 422 576 Tm (Pods pull release images) Tj ET
+0.0000 0.4314 0.4471 RG 1 w 175 588 m 222 588 l S
+0.0000 0.4314 0.4471 RG 1 w 222 588 m 215.8569220667674 584.6440212297706 l S
+0.0000 0.4314 0.4471 RG 1 w 222 588 m 215.8569220667674 591.3559787702294 l S
+0.0000 0.4314 0.4471 RG 1 w 367 588 m 412 588 l S
+0.0000 0.4314 0.4471 RG 1 w 412 588 m 405.85692206676737 584.6440212297706 l S
+0.0000 0.4314 0.4471 RG 1 w 412 588 m 405.85692206676737 591.3559787702294 l S
+0.0000 0.4314 0.4471 RG 1 w 483 633 m 483 610 l S
+0.0000 0.4314 0.4471 RG 1 w 483 610 m 479.6440212297706 616.1430779332326 l S
+0.0000 0.4314 0.4471 RG 1 w 483 610 m 486.3559787702294 616.1430779332326 l S
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 529 Tm (An app commit identifies image contents. A separate GitOps commit selects the backend) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 513 Tm (tag. Argo CD reconciles Kubernetes resources from the declared chart and values.) Tj ET
+BT /F2 14 Tf 0.0000 0.4314 0.4471 rg 1 0 0 1 40 486 Tm (Student lookup on EKS) Tj ET
+0.9176 0.9608 0.9529 rg 40 398 150 45 re f
+0.0000 0.4314 0.4471 rg 40 398 3 45 re f
+BT /F2 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 50 425 Tm (Browser on laptop) Tj ET
+BT /F1 9 Tf 0.2824 0.3765 0.4588 rg 1 0 0 1 50 409 Tm (Local port-forward) Tj ET
+0.9176 0.9608 0.9529 rg 246 398 215 45 re f
+0.0000 0.4314 0.4471 rg 246 398 3 45 re f
+BT /F2 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 256 425 Tm (Frontend Service / Nginx) Tj ET
+BT /F1 9 Tf 0.2824 0.3765 0.4588 rg 1 0 0 1 256 409 Tm (HTTP port 80) Tj ET
+0.0000 0.4314 0.4471 RG 1 w 190 421 m 246 421 l S
+0.0000 0.4314 0.4471 RG 1 w 246 421 m 239.8569220667674 417.6440212297706 l S
+0.0000 0.4314 0.4471 RG 1 w 246 421 m 239.8569220667674 424.3559787702294 l S
+0.9176 0.9608 0.9529 rg 246 329 215 45 re f
+0.0000 0.4314 0.4471 rg 246 329 3 45 re f
+BT /F2 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 256 356 Tm (Backend Service / Flask) Tj ET
+BT /F1 9 Tf 0.2824 0.3765 0.4588 rg 1 0 0 1 256 340 Tm (backend:5000) Tj ET
+0.0000 0.4314 0.4471 RG 1 w 352 398 m 352 374 l S
+0.0000 0.4314 0.4471 RG 1 w 352 374 m 348.6440212297706 380.14307793323263 l S
+0.0000 0.4314 0.4471 RG 1 w 352 374 m 355.3559787702294 380.14307793323263 l S
+0.9176 0.9608 0.9529 rg 246 260 215 45 re f
+0.0000 0.4314 0.4471 rg 246 260 3 45 re f
+BT /F2 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 256 287 Tm (Database Service / MySQL) Tj ET
+BT /F1 9 Tf 0.2824 0.3765 0.4588 rg 1 0 0 1 256 271 Tm (database:3306) Tj ET
+0.0000 0.4314 0.4471 RG 1 w 352 329 m 352 305 l S
+0.0000 0.4314 0.4471 RG 1 w 352 305 m 348.6440212297706 311.1430779332326 l S
+0.0000 0.4314 0.4471 RG 1 w 352 305 m 355.3559787702294 311.1430779332326 l S
+0.9176 0.9608 0.9529 rg 246 191 215 45 re f
+0.0000 0.4314 0.4471 rg 246 191 3 45 re f
+BT /F2 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 256 218 Tm (Persistent volume / EBS) Tj ET
+BT /F1 9 Tf 0.2824 0.3765 0.4588 rg 1 0 0 1 256 202 Tm (MySQL data directory) Tj ET
+0.0000 0.4314 0.4471 RG 1 w 352 260 m 352 236 l S
+0.0000 0.4314 0.4471 RG 1 w 352 236 m 348.6440212297706 242.14307793323258 l S
+0.0000 0.4314 0.4471 RG 1 w 352 236 m 355.3559787702294 242.14307793323258 l S
+BT /F2 12 Tf 0.0000 0.4314 0.4471 rg 1 0 0 1 40 345 Tm (/api/students/<id>) Tj ET
+BT /F1 10 Tf 0.2824 0.3765 0.4588 rg 1 0 0 1 40 322 Tm (The response returns through) Tj ET
+BT /F1 10 Tf 0.2824 0.3765 0.4588 rg 1 0 0 1 40 305 Tm (Flask and Nginx to the browser.) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 153 Tm (Metrics Server supplies backend CPU readings to the HPA. Prometheus supplies historical) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 137 Tm (metrics to Grafana. The HPA adjusts the backend Deployment replica count; the frontend) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 121 Tm (Service continues to use ready backend endpoints via Nginx.) Tj ET
+0.7412 0.8392 0.8471 RG 1 w 40 43 m 555 43 l S
+BT /F1 9 Tf 0.2824 0.3765 0.4588 rg 1 0 0 1 40 24 Tm (SUJAN PAKHRIN  /  DEVOPS ENGINEERING) Tj ET
+BT /F1 9 Tf 0.2824 0.3765 0.4588 rg 1 0 0 1 508 24 Tm (PAGE 2) Tj ET
+endstream
+endobj
+11 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 10 0 R /Annots [] >>
+endobj
+12 0 obj
+<< /Length 4718 >>
+stream
+1.0000 1.0000 1.0000 rg 0 0 595 842 re f
+0.0000 0.4314 0.4471 rg 40 800 33 4 re f
+BT /F2 10 Tf 0.0000 0.4314 0.4471 rg 1 0 0 1 40 777 Tm (FIGURE 2 / INFRASTRUCTURE DESIGN) Tj ET
+BT /F2 25 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 737 Tm (AWS network in us-west-2) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 701 Tm (Terraform created VPC 10.20.0.0/16 across two availability zones. Each zone has a public) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 685 Tm (subnet and a private subnet. EKS managed worker nodes run in the private subnets.) Tj ET
+0.9176 0.9608 0.9529 rg 40 577 235 45 re f
+0.0000 0.4314 0.4471 rg 40 577 3 45 re f
+BT /F2 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 50 604 Tm (Private subnet / us-west-2a) Tj ET
+BT /F1 9 Tf 0.2824 0.3765 0.4588 rg 1 0 0 1 50 588 Tm (10.20.10.0/24  |  EKS worker) Tj ET
+0.9176 0.9608 0.9529 rg 320 577 235 45 re f
+0.0000 0.4314 0.4471 rg 320 577 3 45 re f
+BT /F2 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 330 604 Tm (Private subnet / us-west-2b) Tj ET
+BT /F1 9 Tf 0.2824 0.3765 0.4588 rg 1 0 0 1 330 588 Tm (10.20.11.0/24  |  EKS worker) Tj ET
+0.0000 0.4314 0.4471 RG 1 w 157 577 m 157 539 l S
+0.0000 0.4314 0.4471 RG 1 w 157 539 m 153.64402122977057 545.1430779332327 l S
+0.0000 0.4314 0.4471 RG 1 w 157 539 m 160.35597877022943 545.1430779332327 l S
+0.0000 0.4314 0.4471 RG 1 w 438 577 m 438 539 l S
+0.0000 0.4314 0.4471 RG 1 w 438 539 m 434.6440212297706 545.1430779332327 l S
+0.0000 0.4314 0.4471 RG 1 w 438 539 m 441.3559787702294 545.1430779332327 l S
+0.9176 0.9608 0.9529 rg 40 494 515 45 re f
+0.0000 0.4314 0.4471 rg 40 494 3 45 re f
+BT /F2 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 50 521 Tm (Private route table / both private subnets) Tj ET
+BT /F1 9 Tf 0.2824 0.3765 0.4588 rg 1 0 0 1 50 505 Tm (IPv4 default route: 0.0.0.0/0 to the NAT gateway in us-west-2a) Tj ET
+0.0000 0.4314 0.4471 RG 1 w 158 494 m 158 449 l S
+0.0000 0.4314 0.4471 RG 1 w 158 449 m 154.64402122977057 455.14307793323263 l S
+0.0000 0.4314 0.4471 RG 1 w 158 449 m 161.35597877022943 455.14307793323263 l S
+0.9176 0.9608 0.9529 rg 40 404 235 45 re f
+0.0000 0.4314 0.4471 rg 40 404 3 45 re f
+BT /F2 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 50 431 Tm (Public subnet / us-west-2a) Tj ET
+BT /F1 9 Tf 0.2824 0.3765 0.4588 rg 1 0 0 1 50 415 Tm (10.20.0.0/24  |  NAT gateway + EIP) Tj ET
+0.9176 0.9608 0.9529 rg 320 404 235 45 re f
+0.0000 0.4314 0.4471 rg 320 404 3 45 re f
+BT /F2 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 330 431 Tm (Public subnet / us-west-2b) Tj ET
+BT /F1 9 Tf 0.2824 0.3765 0.4588 rg 1 0 0 1 330 415 Tm (10.20.1.0/24) Tj ET
+0.0000 0.4314 0.4471 RG 1 w 158 404 m 158 364 l S
+0.0000 0.4314 0.4471 RG 1 w 158 364 m 154.64402122977057 370.14307793323263 l S
+0.0000 0.4314 0.4471 RG 1 w 158 364 m 161.35597877022943 370.14307793323263 l S
+0.0000 0.4314 0.4471 RG 1 w 438 404 m 438 364 l S
+0.0000 0.4314 0.4471 RG 1 w 438 364 m 434.6440212297706 370.14307793323263 l S
+0.0000 0.4314 0.4471 RG 1 w 438 364 m 441.3559787702294 370.14307793323263 l S
+0.9176 0.9608 0.9529 rg 40 319 515 45 re f
+0.0000 0.4314 0.4471 rg 40 319 3 45 re f
+BT /F2 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 50 346 Tm (Public route table / both public subnets) Tj ET
+BT /F1 9 Tf 0.2824 0.3765 0.4588 rg 1 0 0 1 50 330 Tm (IPv4 default route: 0.0.0.0/0 to the VPC internet gateway) Tj ET
+0.0000 0.4314 0.4471 RG 1 w 295 319 m 295 283 l S
+0.0000 0.4314 0.4471 RG 1 w 295 283 m 291.6440212297706 289.1430779332326 l S
+0.0000 0.4314 0.4471 RG 1 w 295 283 m 298.3559787702294 289.1430779332326 l S
+0.9176 0.9608 0.9529 rg 170 238 250 45 re f
+0.0000 0.4314 0.4471 rg 170 238 3 45 re f
+BT /F2 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 180 265 Tm (Internet gateway) Tj ET
+BT /F1 9 Tf 0.2824 0.3765 0.4588 rg 1 0 0 1 180 249 Tm (Outbound path to external registries) Tj ET
+BT /F2 14 Tf 0.0000 0.4314 0.4471 rg 1 0 0 1 40 198 Tm (Access and availability) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 174 Tm (An administrative IPv4 /32 limits public EKS API access. IAM roles separate Terraform) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 158 Tm (deployment, cluster, node and EBS controller permissions. The demo browser used a) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 142 Tm (port-forward. A single NAT gateway serves both zones, creating a shared outbound) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 126 Tm (dependency. The EKS control plane is managed by AWS.) Tj ET
+BT /F2 10 Tf 0.0000 0.4314 0.4471 rg 1 0 0 1 40 99 Tm (Terraform: network, routing, EKS and IAM) Tj ET
+0.7412 0.8392 0.8471 RG 1 w 40 43 m 555 43 l S
+BT /F1 9 Tf 0.2824 0.3765 0.4588 rg 1 0 0 1 40 24 Tm (SUJAN PAKHRIN  /  DEVOPS ENGINEERING) Tj ET
+BT /F1 9 Tf 0.2824 0.3765 0.4588 rg 1 0 0 1 508 24 Tm (PAGE 3) Tj ET
+endstream
+endobj
+13 0 obj
+<< /Type /Annot /Subtype /Link /Rect [40 97 280 110] /Border [0 0 0] /A << /S /URI /URI (https://github.com/sujanpakhrin/student-platform-infra) >> >>
+endobj
+14 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 12 0 R /Annots [13 0 R] >>
+endobj
+15 0 obj
+<< /Length 3526 >>
+stream
+1.0000 1.0000 1.0000 rg 0 0 595 842 re f
+0.0000 0.4314 0.4471 rg 40 800 33 4 re f
+BT /F2 10 Tf 0.0000 0.4314 0.4471 rg 1 0 0 1 40 777 Tm (DELIVERY / SOURCE CONTROL AND CI) Tj ET
+BT /F2 25 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 737 Tm (From source to running release) Tj ET
+BT /F2 14 Tf 0.0000 0.4314 0.4471 rg 1 0 0 1 40 701 Tm (Local validation) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 677 Tm (Compose starts Nginx, Flask and MySQL. The browser reaches the frontend on the) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 661 Tm (configured local port \(8082 in the app guide\). Nginx forwards API requests to the) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 645 Tm (backend Service name. The readiness handler checks database connectivity and the) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 629 Tm (students table. The verification added two students, opened one by ID, deleted the) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 613 Tm (other, recreated the containers with the named volume retained, and confirmed the result) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 597 Tm (in the browser.) Tj ET
+BT /F2 14 Tf 0.0000 0.4314 0.4471 rg 1 0 0 1 40 570 Tm (Pull request checks and publishing) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 546 Tm (Work was organized into feature or task branches and reviewed via pull requests. The CI) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 530 Tm (workflow checked out the application, validated source syntax, built the frontend and) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 514 Tm (backend images, started the Compose stack and exercised student creation, list, lookup) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 498 Tm (and delete. The merge run tested the stack and published both images to Docker Hub.) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 482 Tm (Registry credentials were supplied through GitHub Actions configuration.) Tj ET
+BT /F2 14 Tf 0.0000 0.4314 0.4471 rg 1 0 0 1 40 455 Tm (Version trace) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 431 Tm (Both initial images used the same application commit tag. The later backend release was) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 415 Tm (selected independently through an EKS Helm value. GitOps revision 9fbfe33 selected the) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 399 Tm (backend image from app commit c6ffbd9. A ready backend pod reported the expected tag and) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 383 Tm (the version endpoint returned v2.) Tj ET
+BT /F2 10 Tf 0.2824 0.3765 0.4588 rg 1 0 0 1 40 356 Tm (Initial frontend and backend tag) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 338 Tm (sha-4368a0d5f7701be833b04fdf62abcf7942c8c92f) Tj ET
+BT /F2 10 Tf 0.2824 0.3765 0.4588 rg 1 0 0 1 40 309 Tm (Backend v2 tag) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 291 Tm (sha-c6ffbd980e9606f5a0590481145cbf502807c7b5) Tj ET
+BT /F2 10 Tf 0.0000 0.4314 0.4471 rg 1 0 0 1 40 256 Tm (App PR #1: build and integration checks) Tj ET
+BT /F2 10 Tf 0.0000 0.4314 0.4471 rg 1 0 0 1 40 237 Tm (Publishing run for the initial tagged release) Tj ET
+BT /F2 10 Tf 0.0000 0.4314 0.4471 rg 1 0 0 1 40 218 Tm (Backend v2 rollout evidence) Tj ET
+0.7412 0.8392 0.8471 RG 1 w 40 43 m 555 43 l S
+BT /F1 9 Tf 0.2824 0.3765 0.4588 rg 1 0 0 1 40 24 Tm (SUJAN PAKHRIN  /  DEVOPS ENGINEERING) Tj ET
+BT /F1 9 Tf 0.2824 0.3765 0.4588 rg 1 0 0 1 508 24 Tm (PAGE 4) Tj ET
+endstream
+endobj
+16 0 obj
+<< /Type /Annot /Subtype /Link /Rect [40 254 274 267] /Border [0 0 0] /A << /S /URI /URI (https://github.com/sujanpakhrin/student-platform-app/pull/1) >> >>
+endobj
+17 0 obj
+<< /Type /Annot /Subtype /Link /Rect [40 235 310 248] /Border [0 0 0] /A << /S /URI /URI (https://github.com/sujanpakhrin/student-platform-app/actions/runs/44477859858) >> >>
+endobj
+18 0 obj
+<< /Type /Annot /Subtype /Link /Rect [40 216 202 229] /Border [0 0 0] /A << /S /URI /URI (https://github.com/sujanpakhrin/student-platform-gitops/blob/229dfd6/docs/screenshots/18-gitops-image-rollout.png) >> >>
+endobj
+19 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 15 0 R /Annots [16 0 R 17 0 R 18 0 R] >>
+endobj
+20 0 obj
+<< /Length 3980 >>
+stream
+1.0000 1.0000 1.0000 rg 0 0 595 842 re f
+0.0000 0.4314 0.4471 rg 40 800 33 4 re f
+BT /F2 10 Tf 0.0000 0.4314 0.4471 rg 1 0 0 1 40 777 Tm (DEPLOYMENT / KUBERNETES, HELM AND GITOPS) Tj ET
+BT /F2 25 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 737 Tm (Deploying the three tiers) Tj ET
+BT /F2 14 Tf 0.0000 0.4314 0.4471 rg 1 0 0 1 40 701 Tm (Infrastructure and identity) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 677 Tm (Terraform provisioned the VPC, routing, managed EKS cluster and node group. The) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 661 Tm (network-only plan contained 14 resources. The full rebuild plan contained 26, including) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 645 Tm (the EKS Pod Identity agent, storage-controller IAM role and policy attachment, and EBS) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 629 Tm (CSI driver add-on. Two ready workers were observed across us-west-2a and us-west-2b.) Tj ET
+BT /F2 14 Tf 0.0000 0.4314 0.4471 rg 1 0 0 1 40 602 Tm (Chart structure and local rehearsal) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 578 Tm (The chart under charts/student-platform defines Deployments and Services for each tier.) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 562 Tm (ConfigMaps supply application settings and database initialization SQL. The application) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 546 Tm (and database reference student-db-credentials. MySQL mounts its claim at /var/lib/mysql) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 530 Tm (and initializes the schema on an empty volume. Helm lint and template were used before) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 514 Tm (installation.) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 487 Tm (On Minikube, revision 1 installed all tiers. Revision 2 increased the backend to two) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 471 Tm (ready replicas. Rolling back to revision 1 produced revision 3 and restored one ready) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 455 Tm (replica. This exercise demonstrated Helm revision history independently of the EKS image) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 439 Tm (release.) Tj ET
+BT /F2 14 Tf 0.0000 0.4314 0.4471 rg 1 0 0 1 40 412 Tm (EKS deployment order) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 388 Tm (Apply the reviewed infrastructure plan, update kubeconfig, verify worker zones and both) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 372 Tm (EBS CSI rollouts, and create the namespace and Secret. Prepare storage for the chosen) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 356 Tm (recovery configuration before applying argocd/student-platform.yaml. The Application) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 340 Tm (watches main and renders the chart with values-eks.yaml. Verify the claim, workload) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 324 Tm (readiness, Argo sync revision and an HTTP lookup through the frontend.) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 297 Tm (For the recorded rebuild, the chart preserved the explicitly named original PV and the) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 281 Tm (MySQL Deployment mounted a separately created demo PVC. A clean cluster using those EKS) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 265 Tm (values needs those prerequisites. Kubernetes Secrets are created locally and excluded) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 249 Tm (from public Git.) Tj ET
+BT /F2 10 Tf 0.0000 0.4314 0.4471 rg 1 0 0 1 40 222 Tm (Chart and templates) Tj ET
+BT /F2 10 Tf 0.0000 0.4314 0.4471 rg 1 0 0 1 40 203 Tm (Argo CD Application) Tj ET
+0.7412 0.8392 0.8471 RG 1 w 40 43 m 555 43 l S
+BT /F1 9 Tf 0.2824 0.3765 0.4588 rg 1 0 0 1 40 24 Tm (SUJAN PAKHRIN  /  DEVOPS ENGINEERING) Tj ET
+BT /F1 9 Tf 0.2824 0.3765 0.4588 rg 1 0 0 1 508 24 Tm (PAGE 5) Tj ET
+endstream
+endobj
+21 0 obj
+<< /Type /Annot /Subtype /Link /Rect [40 220 154 233] /Border [0 0 0] /A << /S /URI /URI (https://github.com/sujanpakhrin/student-platform-gitops/tree/229dfd6/charts/student-platform) >> >>
+endobj
+22 0 obj
+<< /Type /Annot /Subtype /Link /Rect [40 201 154 214] /Border [0 0 0] /A << /S /URI /URI (https://github.com/sujanpakhrin/student-platform-gitops/blob/229dfd6/argocd/student-platform.yaml) >> >>
+endobj
+23 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 20 0 R /Annots [21 0 R 22 0 R] >>
+endobj
+24 0 obj
+<< /Length 3348 >>
+stream
+1.0000 1.0000 1.0000 rg 0 0 595 842 re f
+0.0000 0.4314 0.4471 rg 40 800 33 4 re f
+BT /F2 10 Tf 0.0000 0.4314 0.4471 rg 1 0 0 1 40 777 Tm (OPERATIONS / MONITORING AND SCHEDULING) Tj ET
+BT /F2 25 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 737 Tm (Workload behaviour) Tj ET
+BT /F2 14 Tf 0.0000 0.4314 0.4471 rg 1 0 0 1 40 701 Tm (Monitoring and horizontal autoscaling) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 677 Tm (Metrics Server exposed node and pod CPU and memory measurements. The backend requested) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 661 Tm (50m CPU and 96Mi memory. The HPA targeted 60 percent average CPU utilization relative to) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 645 Tm (requests, equivalent to 30m average CPU per backend pod. The configured bounds were two) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 629 Tm (to four replicas. Prometheus and Grafana provided historical views of node, pod and) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 613 Tm (application health.) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 586 Tm (At baseline the HPA reported 5 percent CPU with two ready pods. Under a three-minute) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 570 Tm (test against /version the backend reached three available replicas. CPU later fell to 4) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 554 Tm (percent while three were still ready, and the recorded scale-down returned the backend) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 538 Tm (to two.) Tj ET
+BT /F2 14 Tf 0.0000 0.4314 0.4471 rg 1 0 0 1 40 511 Tm (Scheduling exercises on a dedicated two-node Minikube lab) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 487 Tm (Taints and tolerations: both test pods selected the same worker, which carried) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 471 Tm (dedicated=capstone:NoSchedule. One stayed Pending with a scheduling warning. The pod) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 455 Tm (with a matching toleration ran. The selector made the worker mandatory; the toleration) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 439 Tm (permitted placement.) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 412 Tm (Node affinity: a pod required workload=student-api. The scheduler could place it after) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 396 Tm (the worker received that label. Required affinity limits which nodes qualify for the) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 380 Tm (pod.) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 353 Tm (DaemonSet: two ready demo pods appeared on different node names. Placement on each) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 337 Tm (eligible node demonstrates the behaviour needed by a node-level monitoring or log agent.) Tj ET
+BT /F2 10 Tf 0.0000 0.4314 0.4471 rg 1 0 0 1 40 310 Tm (Grafana dashboard configuration) Tj ET
+BT /F2 10 Tf 0.0000 0.4314 0.4471 rg 1 0 0 1 40 291 Tm (HPA under load) Tj ET
+BT /F2 10 Tf 0.0000 0.4314 0.4471 rg 1 0 0 1 40 272 Tm (DaemonSet placement) Tj ET
+0.7412 0.8392 0.8471 RG 1 w 40 43 m 555 43 l S
+BT /F1 9 Tf 0.2824 0.3765 0.4588 rg 1 0 0 1 40 24 Tm (SUJAN PAKHRIN  /  DEVOPS ENGINEERING) Tj ET
+BT /F1 9 Tf 0.2824 0.3765 0.4588 rg 1 0 0 1 508 24 Tm (PAGE 6) Tj ET
+endstream
+endobj
+25 0 obj
+<< /Type /Annot /Subtype /Link /Rect [40 308 226 321] /Border [0 0 0] /A << /S /URI /URI (https://github.com/sujanpakhrin/student-platform-gitops/blob/229dfd6/monitoring/student-platform-dashboard.json) >> >>
+endobj
+26 0 obj
+<< /Type /Annot /Subtype /Link /Rect [40 289 124 302] /Border [0 0 0] /A << /S /URI /URI (https://github.com/sujanpakhrin/student-platform-gitops/blob/229dfd6/docs/screenshots/21-hpa-scale-up.png) >> >>
+endobj
+27 0 obj
+<< /Type /Annot /Subtype /Link /Rect [40 270 154 283] /Border [0 0 0] /A << /S /URI /URI (https://github.com/sujanpakhrin/student-platform-gitops/blob/229dfd6/docs/screenshots/25-daemonset.png) >> >>
+endobj
+28 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 24 0 R /Annots [25 0 R 26 0 R 27 0 R] >>
+endobj
+29 0 obj
+<< /Length 3746 >>
+stream
+1.0000 1.0000 1.0000 rg 0 0 595 842 re f
+0.0000 0.4314 0.4471 rg 40 800 33 4 re f
+BT /F2 10 Tf 0.0000 0.4314 0.4471 rg 1 0 0 1 40 777 Tm (RELIABILITY / FAILURE RECOVERY) Tj ET
+BT /F2 25 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 737 Tm (Incidents and recovery) Tj ET
+BT /F2 14 Tf 0.0000 0.4314 0.4471 rg 1 0 0 1 40 701 Tm (MySQL disk attached; login failed) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 677 Tm (A 1 GiB EBS disk survived teardown in us-west-2b. The rebuilt cluster had an available) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 661 Tm (worker in that zone. A static PV named student-mysql-restored, with reclaim policy) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 645 Tm (Retain, bound the disk to database-data. Events confirmed SuccessfulAttachVolume. MySQL) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 629 Tm (then returned ERROR 1045 for the application and root credentials recreated from the) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 613 Tm (local environment. Successful attachment established disk access; it did not establish) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 597 Tm (database authentication.) Tj ET
+BT /F2 14 Tf 0.0000 0.4314 0.4471 rg 1 0 0 1 40 570 Tm (An immutable binding blocked GitOps sync) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 546 Tm (A separate claim, database-data-recovery-demo, allowed fresh database initialization.) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 530 Tm (The first Git change selected that claim for MySQL, but Argo also tried to clear the old) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 514 Tm (PVC volumeName. Kubernetes rejected the immutable binding change. The chart was) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 498 Tm (corrected to preserve the original volumeName and independently set the Deployment) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 482 Tm (claimName. Both claims became Bound, with different backing volumes. MySQL was 1/1,) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 466 Tm (Flask 2/2 and Nginx 1/1. Historical student data on the old disk remained unverified.) Tj ET
+BT /F2 14 Tf 0.0000 0.4314 0.4471 rg 1 0 0 1 40 439 Tm (Two deliberate recovery demonstrations) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 415 Tm (Pod failure: one Flask pod was deleted. Its ReplicaSet created a replacement and the) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 399 Tm (backend returned to 2/2 ready. A lookup retrieved the same student from the fresh) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 383 Tm (database after recovery. This established post-recovery functionality; continuous) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 367 Tm (availability during deletion was not measured.) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 340 Tm (Configuration drift: Git declared one frontend replica. A manual patch set the live) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 324 Tm (desired count to two. The observation command waited until Argo CD restored one. The) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 308 Tm (frontend returned to 1/1 ready and the Application was Synced and Healthy at the same) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 292 Tm (Git revision, 4559a195.) Tj ET
+BT /F2 10 Tf 0.0000 0.4314 0.4471 rg 1 0 0 1 40 265 Tm (Backend pod recovery) Tj ET
+BT /F2 10 Tf 0.0000 0.4314 0.4471 rg 1 0 0 1 40 246 Tm (Argo CD drift recovery) Tj ET
+0.7412 0.8392 0.8471 RG 1 w 40 43 m 555 43 l S
+BT /F1 9 Tf 0.2824 0.3765 0.4588 rg 1 0 0 1 40 24 Tm (SUJAN PAKHRIN  /  DEVOPS ENGINEERING) Tj ET
+BT /F1 9 Tf 0.2824 0.3765 0.4588 rg 1 0 0 1 508 24 Tm (PAGE 7) Tj ET
+endstream
+endobj
+30 0 obj
+<< /Type /Annot /Subtype /Link /Rect [40 263 160 276] /Border [0 0 0] /A << /S /URI /URI (https://github.com/sujanpakhrin/student-platform-gitops/blob/229dfd6/docs/screenshots/26-backend-pod-recovery.png) >> >>
+endobj
+31 0 obj
+<< /Type /Annot /Subtype /Link /Rect [40 244 172 257] /Border [0 0 0] /A << /S /URI /URI (https://github.com/sujanpakhrin/student-platform-gitops/blob/229dfd6/docs/screenshots/27-argocd-drift-recovery.png) >> >>
+endobj
+32 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 29 0 R /Annots [30 0 R 31 0 R] >>
+endobj
+33 0 obj
+<< /Length 3220 >>
+stream
+1.0000 1.0000 1.0000 rg 0 0 595 842 re f
+0.0000 0.4314 0.4471 rg 40 800 33 4 re f
+BT /F2 10 Tf 0.0000 0.4314 0.4471 rg 1 0 0 1 40 777 Tm (ASSESSMENT / EVIDENCE AND VERIFICATION) Tj ET
+BT /F2 25 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 737 Tm (Evidence index) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 701 Tm (Numbers match the screenshots in the three project repositories. Open the linked) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 685 Tm (collection or individual record to inspect the captured output.) Tj ET
+BT /F2 14 Tf 0.0000 0.4314 0.4471 rg 1 0 0 1 40 658 Tm (Build and local deployment) Tj ET
+BT /F2 10 Tf 0.0000 0.4314 0.4471 rg 1 0 0 1 40 634 Tm (01-07  Compose, student CRUD, persistence, CI checks and registry tags) Tj ET
+BT /F2 10 Tf 0.0000 0.4314 0.4471 rg 1 0 0 1 40 615 Tm (08-11  Helm install, browser verification, upgrade and rollback) Tj ET
+BT /F2 14 Tf 0.0000 0.4314 0.4471 rg 1 0 0 1 40 596 Tm (Cloud deployment) Tj ET
+BT /F2 10 Tf 0.0000 0.4314 0.4471 rg 1 0 0 1 40 572 Tm (12-15  VPC plan and apply, AWS routing and ready EKS nodes) Tj ET
+BT /F2 10 Tf 0.0000 0.4314 0.4471 rg 1 0 0 1 40 553 Tm (16  MySQL storage on EKS) Tj ET
+BT /F2 10 Tf 0.0000 0.4314 0.4471 rg 1 0 0 1 40 534 Tm (17  Argo CD application health) Tj ET
+BT /F2 10 Tf 0.0000 0.4314 0.4471 rg 1 0 0 1 40 515 Tm (18  Git-driven release and backend version) Tj ET
+BT /F2 14 Tf 0.0000 0.4314 0.4471 rg 1 0 0 1 40 496 Tm (Operations and recovery) Tj ET
+BT /F2 10 Tf 0.0000 0.4314 0.4471 rg 1 0 0 1 40 472 Tm (19-22  Grafana and HPA before, during and after load) Tj ET
+BT /F2 10 Tf 0.0000 0.4314 0.4471 rg 1 0 0 1 40 453 Tm (23  Taint and toleration) Tj ET
+BT /F2 10 Tf 0.0000 0.4314 0.4471 rg 1 0 0 1 40 434 Tm (24  Required node affinity) Tj ET
+BT /F2 10 Tf 0.0000 0.4314 0.4471 rg 1 0 0 1 40 415 Tm (25  DaemonSet placement) Tj ET
+BT /F2 10 Tf 0.0000 0.4314 0.4471 rg 1 0 0 1 40 396 Tm (26  Backend pod replacement and student lookup) Tj ET
+BT /F2 10 Tf 0.0000 0.4314 0.4471 rg 1 0 0 1 40 377 Tm (27  Frontend drift and self-healing) Tj ET
+BT /F2 14 Tf 0.0000 0.4314 0.4471 rg 1 0 0 1 40 344 Tm (Operational lessons) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 320 Tm (A missing eks:CreatePodIdentityAssociation permission blocked initial storage add-on) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 304 Tm (creation. Granting that action on the project cluster enabled provisioning. After a) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 288 Tm (rebuild, the HPA reported unknown CPU until Metrics Server was restored. For teardown,) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 272 Tm (inspect EBS disks and Elastic IPs separately even if Terraform state is empty.) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 245 Tm (Results above describe completed exercises. A later rehearsal plan was applying when) Tj ET
+BT /F1 11 Tf 0.0902 0.1765 0.2510 rg 1 0 0 1 40 229 Tm (this report was prepared; its final state is outside the recorded results.) Tj ET
+0.7412 0.8392 0.8471 RG 1 w 40 43 m 555 43 l S
+BT /F1 9 Tf 0.2824 0.3765 0.4588 rg 1 0 0 1 40 24 Tm (SUJAN PAKHRIN  /  DEVOPS ENGINEERING) Tj ET
+BT /F1 9 Tf 0.2824 0.3765 0.4588 rg 1 0 0 1 508 24 Tm (PAGE 8) Tj ET
+endstream
+endobj
+34 0 obj
+<< /Type /Annot /Subtype /Link /Rect [40 632 460 645] /Border [0 0 0] /A << /S /URI /URI (https://github.com/sujanpakhrin/student-platform-app/tree/c6ffbd9/docs/screenshots) >> >>
+endobj
+35 0 obj
+<< /Type /Annot /Subtype /Link /Rect [40 613 418 626] /Border [0 0 0] /A << /S /URI /URI (https://github.com/sujanpakhrin/student-platform-gitops/tree/229dfd6/docs/screenshots) >> >>
+endobj
+36 0 obj
+<< /Type /Annot /Subtype /Link /Rect [40 570 388 583] /Border [0 0 0] /A << /S /URI /URI (https://github.com/sujanpakhrin/student-platform-infra/tree/main/docs/screenshots) >> >>
+endobj
+37 0 obj
+<< /Type /Annot /Subtype /Link /Rect [40 551 184 564] /Border [0 0 0] /A << /S /URI /URI (https://github.com/sujanpakhrin/student-platform-gitops/blob/229dfd6/docs/screenshots/16-eks-storage.png) >> >>
+endobj
+38 0 obj
+<< /Type /Annot /Subtype /Link /Rect [40 532 220 545] /Border [0 0 0] /A << /S /URI /URI (https://github.com/sujanpakhrin/student-platform-gitops/blob/229dfd6/docs/screenshots/17-argocd-synced-healthy.png) >> >>
+endobj
+39 0 obj
+<< /Type /Annot /Subtype /Link /Rect [40 513 292 526] /Border [0 0 0] /A << /S /URI /URI (https://github.com/sujanpakhrin/student-platform-gitops/blob/229dfd6/docs/screenshots/18-gitops-image-rollout.png) >> >>
+endobj
+40 0 obj
+<< /Type /Annot /Subtype /Link /Rect [40 470 352 483] /Border [0 0 0] /A << /S /URI /URI (https://github.com/sujanpakhrin/student-platform-gitops/tree/229dfd6/docs/screenshots) >> >>
+endobj
+41 0 obj
+<< /Type /Annot /Subtype /Link /Rect [40 451 184 464] /Border [0 0 0] /A << /S /URI /URI (https://github.com/sujanpakhrin/student-platform-gitops/blob/229dfd6/docs/screenshots/23-taint-toleration.png) >> >>
+endobj
+42 0 obj
+<< /Type /Annot /Subtype /Link /Rect [40 432 196 445] /Border [0 0 0] /A << /S /URI /URI (https://github.com/sujanpakhrin/student-platform-gitops/blob/229dfd6/docs/screenshots/24-node-affinity.png) >> >>
+endobj
+43 0 obj
+<< /Type /Annot /Subtype /Link /Rect [40 413 178 426] /Border [0 0 0] /A << /S /URI /URI (https://github.com/sujanpakhrin/student-platform-gitops/blob/229dfd6/docs/screenshots/25-daemonset.png) >> >>
+endobj
+44 0 obj
+<< /Type /Annot /Subtype /Link /Rect [40 394 316 407] /Border [0 0 0] /A << /S /URI /URI (https://github.com/sujanpakhrin/student-platform-gitops/blob/229dfd6/docs/screenshots/26-backend-pod-recovery.png) >> >>
+endobj
+45 0 obj
+<< /Type /Annot /Subtype /Link /Rect [40 375 250 388] /Border [0 0 0] /A << /S /URI /URI (https://github.com/sujanpakhrin/student-platform-gitops/blob/229dfd6/docs/screenshots/27-argocd-drift-recovery.png) >> >>
+endobj
+46 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 33 0 R /Annots [34 0 R 35 0 R 36 0 R 37 0 R 38 0 R 39 0 R 40 0 R 41 0 R 42 0 R 43 0 R 44 0 R 45 0 R] >>
+endobj
+47 0 obj
+<< /Title (Enterprise Student Management Platform - Final Project Report) /Author (Sujan Pakhrin) >>
+endobj
+xref
+0 48
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000164 00000 n 
+0000000234 00000 n 
+0000000309 00000 n 
+0000003741 00000 n 
+0000003906 00000 n 
+0000004073 00000 n 
+0000004241 00000 n 
+0000004405 00000 n 
+0000010689 00000 n 
+0000010838 00000 n 
+0000015609 00000 n 
+0000015776 00000 n 
+0000015931 00000 n 
+0000019510 00000 n 
+0000019683 00000 n 
+0000019874 00000 n 
+0000020101 00000 n 
+0000020270 00000 n 
+0000024303 00000 n 
+0000024509 00000 n 
+0000024720 00000 n 
+0000024882 00000 n 
+0000028283 00000 n 
+0000028508 00000 n 
+0000028727 00000 n 
+0000028943 00000 n 
+0000029112 00000 n 
+0000032911 00000 n 
+0000033138 00000 n 
+0000033366 00000 n 
+0000033528 00000 n 
+0000036801 00000 n 
+0000036997 00000 n 
+0000037196 00000 n 
+0000037391 00000 n 
+0000037609 00000 n 
+0000037837 00000 n 
+0000038064 00000 n 
+0000038263 00000 n 
+0000038486 00000 n 
+0000038706 00000 n 
+0000038922 00000 n 
+0000039149 00000 n 
+0000039377 00000 n 
+0000039609 00000 n 
+trailer
+<< /Size 48 /Root 1 0 R /Info 47 0 R >>
+startxref
+39726
+%%EOF
