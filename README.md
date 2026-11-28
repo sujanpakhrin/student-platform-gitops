@@ -87,3 +87,22 @@ Metrics Server supplied CPU readings to the backend HPA. Prometheus and Grafana 
 | ---------------------------------------------------------------------------- | --------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
 | [26 — Backend pod recovery](docs/screenshots/26-backend-pod-recovery.png)    | I deleted one of two ready Flask pods.                                            | The ReplicaSet created a replacement. The backend returned to `2/2` ready, and I retrieved the same student ID through the frontend. |
 | [27 — Argo CD drift recovery](docs/screenshots/27-argocd-drift-recovery.png) | I changed the live frontend replica count from one to two while Git declared one. | Argo CD restored one replica and reported `Synced` and `Healthy` at the same Git revision, `4559a195`.                               |
+
+## Published container images
+
+| Component      | Docker Hub                                                                          | Image used for the verified EKS release                                             |
+| -------------- | ----------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| Nginx frontend | [Frontend tags](https://hub.docker.com/r/codeykenny/student-platform-frontend/tags) | `codeykenny/student-platform-frontend:sha-4368a0d5f7701be833b04fdf62abcf7942c8c92f` |
+| Flask backend  | [Backend tags](https://hub.docker.com/r/codeykenny/student-platform-backend/tags)   | `codeykenny/student-platform-backend:sha-c6ffbd980e9606f5a0590481145cbf502807c7b5`  |
+
+The initial CI run published both images under the same commit tag. A later
+GitOps release updated the backend independently. [Evidence 18](docs/screenshots/18-gitops-image-rollout.png)
+shows the running backend tag and the `v2` response.
+
+## Submission documents
+
+- [Deployment guide](docs/deployment-guide.md)
+- [Troubleshooting guide](docs/troubleshooting-guide.md)
+- [Architecture diagram](docs/diagrams/architecture.svg)
+- [AWS network diagram](docs/diagrams/network.svg)
+- [Final project report](docs/student-platform-final-report.pdf)
